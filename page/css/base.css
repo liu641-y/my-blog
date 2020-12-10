@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-image: url(../img/whitewall.jpg);
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+.header_content {
+    width: 1150px;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 50px;
+    font-size: 18px;
+    position: relative;
+}
+
+.header_content ul{
+    position: absolute;
+    left: 200px;
+    display: inline-block;
+}
+
+.header_content ul li {
+    float: left;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.header_content ul li a {
+
+    font-size: 14px;
+    color: white;
+    line-height: 50px;
+    
+}
+
+.header_content input{
+    position: absolute;
+    right: 120px;
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    top: 50%;
+    margin-top: -19px;
+    padding-left: 5px;
+    outline: none;
+}
+
+.header_content button {
+    position: absolute;
+    right: 50px;
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+    top: 50%;
+    margin-top: -17px;
+    outline: none;
+    background: white;
+}
+
+.content {
+    position: relative;
+    width: 1170px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: block;
+}
+
+
+.content .left_content{
+
+    width: 62%;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.content .right_content{
+    width: 32%;
+
+    float: right;
+}
+
+.rightbase {
+    border-radius: 5px;
+    background-color: pink;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+.rightbase div{
+    color: red;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.content .random-tag{
+    padding: 5px 2px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.rightbase a{
+    color: white;
+    font-size: 14px;
+    display: inline-block;
+    border-bottom: 10px;
+}
+
+.rightbase .username,
+.rightbase .comment_time{
+    font-size: 14px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.rightbase .username{
+    float: left;
+}
+.rightbase .comment_time{
+    float: right;
+}
+.rightbase  .newestcom{
+    color: grey;
+}
+
+.clearfix::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    text-align: center;
+    display: block;
+}
+
+footer li{
+    display: inline-block;
+    color: #a2a2a2;
+    padding-left: 5px;
+    font-size: 14px;
+}

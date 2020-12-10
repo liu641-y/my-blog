@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>个人博客</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./js/axios.js"></script>
+   
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_content">
+            <span>个人博客|技术博客</span>
+            <ul>
+                <li>
+                    <a href="/">首页</a>
+                </li>
+                <li>
+                    <a href="./edit-blog.html">博客编辑</a>
+                </li>
+                <li>
+                    <a href="./edit-everyday.html">每日一句编辑</a>
+                </li>
+                <li>
+                    <a href="./about.html">关于</a>
+                </li>
+            </ul>
+            <input type="text" placeholder="输入关键词查找">
+            <button>搜索</button>
+        </div>
+    </header>
+    <div class="content clearfix">
+        <div class="left_content">
+            <div class="everyday" id="everyday">
+                <p class="everyday_title">
+                    {{ todaydata }}
+                </p>
+                <span class="speak">
+                    {{ todayspeak }}
+                </span>
+                <span class="auther">
+                    {{ todayauthor }}
+                </span>
+            </div>
+            <div class="blog" id="blog">
+                <div v-for="article in blogList">
+                    <div class="blog-text">
+                        <h2 class="blog-title">
+                           <a v-bind:href="'./blog-detail.html?' + article.id">{{ article.title }}</a>
+                        </h2>
+                        <p class="blog-content ">
+                            {{article.content}}
+                        </p>
+                    </div>
+                    <div class="blog-info">
+                        发布于{{ article.utime }}| 浏览：{{ article.views }} | Tags: {{ article.tags }}
+                    </div>
+                </div>
+                <ul class="page_tool">
+                    <li v-for="page in pageList" v-on:click="getpage(page.page, pageSize)">{{ page.text }}</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="right_content">
+            <div class="rightbase" id="tags">
+                <div class="tag-title">随机标签云</div>
+                <a href="/" class="random-tag" v-for=" tagdata in tagList">
+                    {{ tagdata }}
+                </a>
+            </div>
+            <div class="rightbase" id="hot_recent">
+                <div>最近热门</div>
+                <a href="/" v-for="host in hotList">{{ host }}</a>
+            </div>
+            <div class="rightbase" id="new_comment">
+                <div>最新评论</div>
+                <div class="newcom  clearfix" id="recentComment" v-for="comment in commentList">
+                    <div class="username">{{ comment.name }}</div>
+                    <div class="comment_time">{{ comment.date }}</div>
+                    <a href="/" class="newestcom">{{ comment.comment}}</a>
+                </div>
+               
+                
+               
+            </div>
+        </div>
+    </div>
+    <footer class="clearfix">
+        <ul class="clearfix">
+            <li>我可去你码的</li>
+            <li>我可去你码的</li>
+            <li>我可去你码的</li>
+            <li>我可去你码的</li>
+            <li>我可去你码的</li>
+            <li>我可去你码的</li>
+            <li>我可去你码的</li>
+            <li>我可去你码的</li>
+            <li>我可去你码的</li>
+            <li>我可去你码的</li>
+        </ul>
+    </footer>
+</body>
+<script src="./js/gettime.js"></script>
+<script src="./js/base.js"></script>
+<script src="./js/index.js"></script>
+
+
+</html>

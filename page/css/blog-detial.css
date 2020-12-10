@@ -1,0 +1,21 @@
+.left_content #blog_detail{
+    padding: 20px;
+    border: 1px solid #e3e3e3;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #5f5f5f;
+    margin-bottom: 20px;
+}
+
+.left_content #blog_detail div{
+    padding-top: 20px;
+}
+
+.left_content #blog_detail  .blog_info{
+    padding-bottom: 20px;
+}
+.blog_content {
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}

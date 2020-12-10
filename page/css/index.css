@@ -1,0 +1,74 @@
+
+
+.content .left_content .everyday{
+    position: relative;
+    padding: 20px;
+    border: 1px solid #e3e3e3;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #5f5f5f;
+    margin-bottom: 20px;
+    
+}
+
+ .everyday_title {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+ .everyday .auther{
+    float: right;
+}
+
+.content .left_content .blog{
+    position: relative;
+
+  
+}
+
+.content .left_content .blog .blog-text{
+    padding: 20px;
+    border: 1px solid #e3e3e3;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 1px 0px 10px #5f5f5f;
+}
+
+.content .left_content .blog .blog-text .blog-title{
+    padding: 10px 0 ;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.content .left_content .blog .blog-info{
+    background-color: black;
+    color: white;
+    
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 5px 15px;
+    box-shadow: 1px 1px 10px #5f5f5f;
+    margin-bottom: 20px;
+}
+
+.content .left_content .page_tool{
+    
+    text-align: center;
+}
+
+.content .left_content .page_tool li{
+    background-color:red;
+    color: white;
+    border: 1px solid black;
+    height: 30px;
+    width: 40px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.left_content .page_tool li:hover{
+    background: blue;
+}

@@ -1,0 +1,48 @@
+.content .introduce {
+    padding: 20px;
+    border: 1px solid #e3e3e3;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #5f5f5f;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.introduce h2{
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.introduce hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.introduce p{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.left_content .about_comment {
+    width: 100%;
+    border: 1px dashed blue;
+    background-color: violet;
+    border-radius: 10px;
+    padding:  20px;
+}
+
+.about_comment .commentInf{
+    height: 30px;
+}
+.about_comment img{
+    height: 30px;
+    width: 30px;
+    vertical-align:middle;
+}
+.about_comment .name{
+    font-weight: bold;
+}
+
+
+.about_comment p{
+    margin: 10px 0;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于 | 个人博客</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header_content">
+            <span>个人博客|技术博客</span>
+            <ul>
+                <li>
+                    <a href="/">首页</a>
+                </li>
+                <li>
+                    <a href="./edit-blog.html">博客编辑</a>
+                </li>
+                <li>
+                    <a href="./edit-everyday.html">每日一句编辑</a>
+                </li>
+                <li>
+                    <a href="./about.html">关于</a>
+                </li>
+            </ul>
+            <input type="text" placeholder="输入关键词查找">
+            <button>搜索</button>
+        </div>
+    </header>
+    <div class="content clearfix">
+         <div class="left_content">
+             <div class="introduce">
+                    <h2 class="me">关于我</h2>
+                    <hr>
+                    <p>博主刘思远，东北彭于晏，某市，九零后</p>
+                    <p>学习前端技术良久，代码风骚</p>
+                    <p>找不到工作的垃圾程序员</p>
+                    <p>除了英俊一无所有</p> 
+                    <p>无数荣誉加深</p>
+                    <p>一心钻研技术</p>
+                    <h2 class="mineblog">关于博客</h2>
+                    <hr>
+                    <p>憨批博客</p>
+                    <p>敲你码卖批</p>
+                    <p>前后端分离，我看你全家都前后端分离</p>
+                    <p>哎，这个博客只打算做两个网页</p>
+                    <p>啥也不是，今天又是啥也没干的一天</p>
+                    <p>和呵呵呵呵呵呵呵呵呵呵哈哈</p>
+             </div>
+             <div class="about_comment">
+                 <div class="commentInf">
+                    <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2342083191,4139347491&fm=26&gp=0.jpg" alt="">
+                    <span class="name">刘某：</span>
+                    <span> 发表于2020年11月11日13:47</span>
+                    <span>[回复]</span>
+                 </div>
+                 <p>如有少量蛋白质沉淀和脂肪上浮，属于正常现象，饮用前有少量蛋白质有少量蛋白质沉淀和脂肪上浮，属于正常现象，饮用前有少量蛋白质沉淀和脂肪上浮，属于正常现象，饮用前有少量蛋白质沉淀和脂肪上浮，属于正常现象，饮用前有少量蛋白质沉淀和脂肪上浮，属于正常现象，饮用前有少量蛋白质沉淀和脂肪上浮，属于正常现象，饮用前有少量蛋白质沉淀和脂肪上浮，属于正常现象，饮用前有少量蛋白质沉淀和脂肪上浮，属于正常现象，饮用前有少量蛋白质沉淀和脂肪上浮，属于正常现象，饮用前有少量蛋白质沉淀和脂肪上浮，属于正常现象，饮用前有少量蛋白质沉淀和脂肪上浮，属于正常现象，饮用前有少量蛋白质沉淀和脂肪上浮，属于正常现象，饮用前沉淀和脂肪上浮，属于正常现象，饮用前请摇匀。</p>
+             </div>
+         </div>
+        <div class="right_content">
+            <div class="rightbase" id="tags">
+                <div class="tag-title">随机标签云</div>
+                <a href="/" class="random-tag" v-for=" tagdata in tagList">
+                    {{ tagdata }}
+                </a>
+            </div>
+            <div class="rightbase" id="hot_recent">
+                <div>最近热门</div>
+                <a href="/" v-for="host in hotList">{{ host }}</a>
+            </div>
+            <div class="rightbase" id="new_comment">
+                <div>最新评论</div>
+                <div class="newcom  clearfix">
+                    <div class="username">这里是用户名</div>
+                    <div class="comment_time">这里是时间</div>
+                    <a href="/" class="newestcom">8女子刺死14岁第三者逃亡25年380万</a>
+                </div>
+                <div class="newcom  clearfix">
+                    <div class="username">这里是用户名</div>
+                    <div class="comment_time">这里是时间</div>
+                    <a href="/" class="newestcom">8女子刺死14岁第三者逃亡25年380万</a>
+                </div>
+                <div class="newcom  clearfix">
+                    <div class="username">这里是用户名</div>
+                    <div class="comment_time">这里是时间</div>
+                    <a href="/" class="newestcom">8女子刺死14岁第三者逃亡25年380万</a>
+                </div>
+                
+               
+            </div>
+        </div>
+    </div>
+    <footer class="clearfix">
+        <ul class="clearfix">
+            <li>我可去你码的</li>
+            <li>我可去你码的</li>
+            <li>我可去你码的</li>
+            <li>我可去你码的</li>
+            <li>我可去你码的</li>
+            <li>我可去你码的</li>
+            <li>我可去你码的</li>
+            <li>我可去你码的</li>
+            <li>我可去你码的</li>
+            <li>我可去你码的</li>
+        </ul>
+    </footer>
+    <script src="./js/base.js"></script>
+
+</body>
+</html>
